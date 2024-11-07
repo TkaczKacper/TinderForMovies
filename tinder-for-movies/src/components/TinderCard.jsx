@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MovieCard } from "./MovieCard";
 import { fetchMovies } from "../redux/actions";
+import { Controls } from "./Controls";
 
 export const TinderCard = () => {
    const dispatch = useDispatch();
@@ -18,7 +19,10 @@ export const TinderCard = () => {
       <div>
          <h1>Tinder</h1>
          {currMovie ? (
-            <MovieCard movie={currMovie} />
+            <>
+               <MovieCard movie={currMovie} />
+               <Controls movieId={currMovie.id} />
+            </>
          ) : (
             <h1>No more movies!</h1>
          )}

@@ -9,6 +9,7 @@ export const fetchMovies = () => async (dispatch) => {
 
 export const acceptMovie = (id) => async (dispatch) => {
    try {
+      console.log(`Movie id: ${id} accepted`);
       await fetch(`/recommendations/${id}/accept`, { method: "PUT" });
       dispatch({ type: "NEXT_MOVIE" });
    } catch (err) {
@@ -19,6 +20,7 @@ export const acceptMovie = (id) => async (dispatch) => {
 export const rejectMovie = (id) => async (dispatch) => {
    try {
       await fetch(`/recommendations/${id}/reject`, { method: "PUT" });
+      console.log(`Movie id: ${id} rejected`);
       dispatch({ type: "NEXT_MOVIE" });
    } catch (err) {
       console.error("Unexpected error while rejecting movie: \n", err);
