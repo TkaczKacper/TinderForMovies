@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { MovieCard } from "./MovieCard";
 import { fetchMovies } from "../redux/actions";
 import { Controls } from "./Controls";
+import "./TinderCard.css";
 
 export const TinderCard = () => {
    const dispatch = useDispatch();
@@ -16,8 +17,7 @@ export const TinderCard = () => {
    }, [dispatch]);
 
    return (
-      <div>
-         <h1>Tinder</h1>
+      <div className="tinder-card-container">
          {currMovie ? (
             <>
                <MovieCard movie={currMovie} />

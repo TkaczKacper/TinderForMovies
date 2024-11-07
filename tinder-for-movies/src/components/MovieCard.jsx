@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { acceptMovie, rejectMovie } from "../redux/actions";
 import { useSwipe } from "../hooks/useSwipe";
+import "./MovieCard.css";
 
 export const MovieCard = ({ movie }) => {
    const dispatch = useDispatch();
@@ -28,15 +29,25 @@ export const MovieCard = ({ movie }) => {
          onTouchStart={onTouchStart}
          onTouchMove={onTouchMove}
          onTouchEnd={onTouchEnd}
+         style={{
+            backgroundImage: `url(${movie.imageUrl})`,
+         }}
       >
-         <h1 className="movie-title">{movie.title}</h1>
-         <img
-            className="movie-image"
-            src={movie.imageUrl}
-            alt="movie poster"
-         ></img>
-         <p className="movie-summary">{movie.summary}</p>
-         <p className="movie-rating">({movie.rating} / 10)</p>
+         <div className="movie-card-footer">
+            <h1 className="movie-title">{movie.title}</h1>
+            <p className="movie-summary">{movie.summary}</p>
+            <div className="movie-rating">
+               <div className="rating-stars">
+                  <div
+                     className="filled-stars"
+                     style={{ width: (movie.rating / 10) * 100 }}
+                  >
+                     ★★★★★
+                  </div>
+                  <div className="empty-stars">★★★★★</div>
+               </div>
+            </div>
+         </div>
       </div>
    );
 };

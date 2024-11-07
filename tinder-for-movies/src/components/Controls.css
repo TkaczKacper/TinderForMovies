@@ -1,0 +1,27 @@
+.control-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   width: 60%;
+}
+
+.control-button {
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   border: none;
+   font-size: 30px;
+   color: white;
+   cursor: pointer;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.control-button:focus {
+   outline: none;
+}
+#accept-button {
+   background: linear-gradient(135deg, #66ff99, #33cc66);
+}
+#reject-button {
+   background: linear-gradient(135deg, #ff7a7a, #ff3d3d);
+}

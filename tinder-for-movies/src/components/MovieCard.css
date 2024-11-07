@@ -1,0 +1,52 @@
+.movie-card {
+   display: flex;
+   flex-direction: column;
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+   height: 600px;
+   width: 95%;
+   align-items: stretch;
+   justify-content: flex-end;
+   margin-bottom: 5px;
+}
+
+.movie-card-footer {
+   color: white;
+   background: linear-gradient(0deg, #000 15%, transparent 100%);
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   height: 50%;
+   padding: 10px;
+   row-gap: 7px;
+   border-radius: 10px;
+}
+
+.movie-card-footer > * {
+   margin: 0;
+}
+
+.movie-summary {
+   font-size: 22px;
+}
+
+.movie-rating {
+   font-size: 24px;
+   position: relative;
+   display: inline-block;
+}
+.rating-stars {
+   position: relative;
+   display: inline-block;
+   color: gray;
+}
+.filled-stars {
+   position: absolute;
+   color: red;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+   white-space: nowrap;
+   pointer-events: none;
+}

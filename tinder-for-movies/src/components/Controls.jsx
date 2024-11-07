@@ -1,25 +1,26 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { acceptMovie, rejectMovie } from "../redux/actions";
+import "./Controls.css";
 
 export const Controls = ({ movieId }) => {
    const dispatch = useDispatch();
 
    return (
-      <div>
+      <div className="control-container">
          <button
             className="control-button"
-            id="accept"
-            onClick={() => dispatch(acceptMovie(movieId))}
+            id="reject-button"
+            onClick={() => dispatch(rejectMovie(movieId))}
          >
-            Accept
+            X
          </button>
          <button
             className="control-button"
-            id="reject"
-            onClick={() => dispatch(rejectMovie(movieId))}
+            id="accept-button"
+            onClick={() => dispatch(acceptMovie(movieId))}
          >
-            Reject
+            ❤
          </button>
       </div>
    );
