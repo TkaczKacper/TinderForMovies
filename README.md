@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+# Tinder For Movies Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Application Overview
 
-## Available Scripts
+The app is designed to display movie recommendations, allowing users to swipe left (reject) or right (accept). The state is managed using Redux, and the movie data is fetched from an API.
 
-In the project directory, you can run:
+## Getting Started with TinderForMovies
 
-### `npm start`
+Follow these steps to get a local copy of the **TinderForMovie** application up and running on your machine.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Before getting started, make sure you have the following installed:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Node.js**: [Download and install Node.js](https://nodejs.org/). This will also install `npm` (Node Package Manager).
+- **Git**: [Download and install Git](https://git-scm.com/).
 
-### `npm test`
+## Step by step installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/TkaczKacper/TinderForMovies.git
 
-### `npm run build`
+cd TinderForMovies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
+```
+This will start the React development server and open the app in your default web browser at http://localhost:3000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will automatically reload if you make changes to the code.
 
-### `npm run eject`
+## Features
+- **Movie Swiping**: Swipe left to reject or right to accept movie recommendations.
+- **Fetch Movies**: Movies are fetched from an API.
+- **Redux State Management**: The app uses Redux for managing the state of movies and the current movie index.
+- **Responsive**: Supports both mouse and touch events for swiping on desktop and mobile devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Desktop version
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Desktop image](https://github.com/TkaczKacper/TinderForMovies/blob/main/app_images/Desktop.jpg?raw=true)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Mobile version
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Mobile image](https://github.com/TkaczKacper/TinderForMovies/blob/main/app_images/mobile.jpg?raw=true)
