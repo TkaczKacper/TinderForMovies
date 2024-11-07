@@ -3,9 +3,15 @@ import { useDispatch } from "react-redux";
 import { acceptMovie, rejectMovie } from "../redux/actions";
 import { useSwipe } from "../hooks/useSwipe";
 import "./MovieCard.css";
+import { Movie } from "../types/types";
+import { AppDispatch } from "../redux/store";
 
-export const MovieCard = ({ movie }) => {
-   const dispatch = useDispatch();
+interface MovieCardProps {
+   movie: Movie;
+}
+
+export const MovieCard: React.FC<MovieCardProps> = ({ movie }) => {
+   const dispatch = useDispatch<AppDispatch>();
 
    const {
       onMouseDown,
@@ -30,7 +36,7 @@ export const MovieCard = ({ movie }) => {
          onTouchMove={onTouchMove}
          onTouchEnd={onTouchEnd}
          style={{
-            backgroundImage: `url(${movie.imageUrl})`,
+            backgroundImage: `url(${movie.imageURL})`,
          }}
       >
          <div className="movie-card-footer">

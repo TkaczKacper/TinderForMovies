@@ -1,16 +1,20 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { MovieCard } from "./MovieCard";
-import { fetchMovies } from "../redux/actions";
 import { Controls } from "./Controls";
 import "./TinderCard.css";
+import { fetchMovies } from "../redux/actions";
+import { AppDispatch, RootState } from "../redux/store";
+import { Movie } from "../types/types";
 
 export const TinderCard = () => {
-   const dispatch = useDispatch();
-   const movies = useSelector((state) => state.movies.movies);
-   const currIndex = useSelector((state) => state.movies.currentIndex);
-   console.log(movies, currIndex);
-   const currMovie = movies ? movies[currIndex] : null;
+   const dispatch = useDispatch<AppDispatch>();
+   const movies = useSelector((state: RootState) => state.movies.movies);
+   const currIndex = useSelector(
+      (state: RootState) => state.movies.currentIndex
+   );
+
+   const currMovie: Movie | null = movies ? movies[currIndex] : null;
 
    useEffect(() => {
       dispatch(fetchMovies());
