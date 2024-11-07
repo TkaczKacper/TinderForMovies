@@ -16,6 +16,21 @@ const initialState = {
          summary: "Lorem ipsum...",
          rating: 8.2,
       },
+      {
+         id: "6202jkl",
+         imageUrl:
+            "https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg",
+         title: "Interstellar",
+         summary: "Lorem ipsum...",
+         rating: 8.6,
+      },
+      {
+         id: "1040vwx",
+         imageUrl: "https://m.media-amazon.com/images/I/715YKSv-XuL.jpg",
+         title: "Harry Potter and the Sorcerer's Stone",
+         summary: "Lorem ipsum...",
+         rating: 7.6,
+      },
    ],
    currentIndex: 0,
 };
