@@ -1,5 +1,7 @@
 # Tinder For Movies Application
 
+Live version of the applicaiton: https://tkaczkacper.github.io/TinderForMovies/
+
 ## Application Overview
 
 The app is designed to display movie recommendations, allowing users to swipe left (reject) or right (accept). The state is managed using Redux, and the movie data is fetched from an API.
