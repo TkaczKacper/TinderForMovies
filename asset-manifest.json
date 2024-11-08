@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/TinderForMovies/static/css/main.5f1e50c8.css",
+    "main.js": "/TinderForMovies/static/js/main.1de78836.js",
+    "index.html": "/TinderForMovies/index.html",
+    "main.5f1e50c8.css.map": "/TinderForMovies/static/css/main.5f1e50c8.css.map",
+    "main.1de78836.js.map": "/TinderForMovies/static/js/main.1de78836.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f1e50c8.css",
+    "static/js/main.1de78836.js"
+  ]
+}
