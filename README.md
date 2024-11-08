@@ -1,6 +1,6 @@
-# Tinder For Movies Application
+# [Tinder For Movies Application](https://tkaczkacper.github.io/TinderForMovies/)
 
-Live version of the applicaiton: https://tkaczkacper.github.io/TinderForMovies/
+Check out live version of the application by clicking header above.
 
 ## Application Overview
 
